@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :meals, except: %i[new edit]
   # RESTful routes
   resources :examples, except: %i[new edit]
 
@@ -12,12 +13,14 @@ Rails.application.routes.draw do
 
   # Doctor resource routes
   resources :doctors, except: %i[new edit]
+  resources :appointments, except: %i[new edit]
 
   # Author resource routes
   resources :authors, except: %i[new edit]
 
   # Recipe resource routes
   resources :recipes, except: %i[new edit]
+  resources :recipeingredients, except: %i[new edit]
 
   # Books resource routes
   # resources :books will give you all seven (index, show, update, destroy,

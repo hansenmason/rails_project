@@ -9,7 +9,8 @@ curl "http://localhost:4741/patients" \
       "first_name": "'"${FIRST}"'",
       "last_name": "'"${LAST}"'",
       "diagnosis": "'"${DIAGNOSIS}"'",
-      "born_on": "'"${BORN_ON}"'"
+      "born_on": "'"${BORN_ON}"'",
+      "doctor_id": "'"${DOC_ID}"'"
     }
   }'
 
